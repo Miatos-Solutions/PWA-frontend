@@ -1,0 +1,71 @@
+.Social-btns {
+    border-radius: 25px;
+    border: 1px solid transparent;
+    padding: 0.3em 0.6em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+.Signin-socials-btn, .Submit-btn{
+    border: none;
+    outline: none;
+    border-radius: 25px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    cursor: pointer;
+}
+
+/* Register styles below */
+
+
+
+
+
+/* Login styles below */
+.Input{
+    height: fit-content;
+    outline: none;
+    width: 50%;
+    background: transparent;
+    color: rgb(96, 95, 95);
+}
+.Visibility-Icon{
+    color: rgb(96, 95, 95);
+}
+.checkbox:hover{
+    background: rgb(110, 109, 109);
+    color: black;
+}
+
+
+
+
+/* welcome styles here */
+.Welcome{
+    width: 330px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.Social-Icons{
+    color: #fff;
+}
+/* OTP component styles */
+.OTP-INPUT{
+    width: 50px;
+    height: 50px;
+    border: 2px solid rgba(48, 48, 48, 0.74);
+    border-radius: 10px;
+    color: rgba(45, 45, 45, 0.795);
+}
+.OTP-INPUT.selected {
+    background-color: #fff;
+    box-shadow: 0 0 7px rgb(55, 55, 55);
+}
