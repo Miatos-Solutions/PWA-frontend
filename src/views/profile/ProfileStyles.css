@@ -1,0 +1,77 @@
+.Profile-box{
+    box-shadow: 0 2px 20px rgb(0, 0, 0, 0.15);
+}
+.Profile{
+    border-radius: 8px;
+}
+.Btns>button{
+    border-radius: 8px;
+    border: 2px solid black;
+    width: 10.4rem;
+}
+.Btns>button:nth-child(1){
+    background: #000;
+}
+.Btns>button:nth-child(2){
+    color: black;
+}
+.User-PROFILE-Box{
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+.Profile-cover{
+    width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+.Profile-cover>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px; 
+}
+.Profile-User-Image{
+    border: 2px solid #c6c6c6;
+    padding: 4px;
+    border-radius: 50%;
+}
+.Profile-User-Image>img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 50%; 
+}
+
+.TESTEST {
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  /* .TESTEST button {
+    margin-right: 10px;
+  } */
+  
+  .indicator-bar {
+    height: 2px;
+    background-color: #000;
+    width: 50%;
+  }
+  
+  .active-tab-2{
+    font-weight: bold;
+  }
+
+  .active-tab-1{
+    font-weight: bold;
+  }
+  
+  .tab-content-1 {
+    display: none;
+  }
+  
+  /* Show active tab content */
+  .tab-content-1[style*="block"] {
+    display: block;
+  }
