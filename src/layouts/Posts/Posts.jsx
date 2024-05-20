@@ -23,8 +23,8 @@ function Posts({ handlePostClick }) {
               <p className='top-0 right-0 text-[13px]'>{post.timestamp}</p>
             </div>
           </div>
-          <div className='relative w-[100%] h-[18rem] bg-[#c6c6c6] rounded'>
-            <img src={post.image} alt="Post" className="inset-0 w-full h-full object-cover rounded" />
+          <div className='w-[100%] h-[18rem] bg-[#c6c6c6] rounded'>
+            <img src={post.image} alt="Post" className="inset-1 w-full h-full object-cover rounded" />
           </div>
           <div className="inset-0 flex justify-between items-center py-2">
             <div className='w-[30%] h-[30px] flex flex-col justify-between'>
