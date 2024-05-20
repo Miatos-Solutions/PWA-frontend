@@ -300,7 +300,7 @@ input:hover, textarea:hover {
     height: 5.3rem;
     bottom: 0;
     left: 0;
-    box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.1);
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
   }
@@ -334,6 +334,27 @@ input:hover, textarea:hover {
   .Caption-box {
     height: 3.1rem;
   }
+  .video-container {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.swiper-card{
+  height:74vh;
+}
+
+  .Home-page{
+    padding-bottom: 20px;
+  }
+  .Home-page > section {
+    width: 100%;
+    height: calc(100vh - 130px);
+    padding-top: 5px;
+  }
 
   .tab-content-1 {
     height: 52vh;
@@ -354,6 +375,9 @@ input:hover, textarea:hover {
 }
 .Post-container-5{
   max-width: 8.1rem;
+}
+.swiper-card{
+  height: 60vh;
 }
 
 }
