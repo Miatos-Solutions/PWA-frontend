@@ -1,0 +1,143 @@
+
+/* my drop menu */
+.dropMenu {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    
+    height: fit-content;
+    list-style-type: none;
+    padding: 0;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: relative;
+
+}
+
+.dropMenu .selected {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 10px 0;
+    margin: 0;
+    border: 2px solid #6c7275;
+    border-radius: 10px;
+    background-color: white;
+
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    cursor: pointer;
+    color: #6c7275;
+
+}
+.dropMenu .selected>b {
+    margin-left: 10px;
+    text-transform: capitalize;
+    margin-right: 10px;
+    font-weight: bolder;
+  }
+  .dropMenu .selected>i {
+    margin-right: 10px;
+    -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  .dropMenu.dropped .selected>i {
+    margin-right: 10px;
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  
+  .dropMenu .dropList {
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    background-color: white;
+    -webkit-box-shadow: 0 0 3px #6c7275;
+            box-shadow: 0 0 3px #6c7275;
+    color: #636363;
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 10px 0px;
+    z-index: 1;
+  }
+  .dropMenu .dropList.closed {
+    display: none !important;
+  }
+  .dropMenu .dropList>ul {
+    list-style-type: none;
+    width: 100%;
+    max-height: 300px;
+    overflow: scroll;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    margin: 0;
+    padding: 0;
+   
+  }
+  .dropMenu .dropList>ul li {
+    width: 80%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 5px auto;
+    text-transform: capitalize;
+  }
+  .dropMenu .dropList>ul li:hover {
+    cursor: pointer;
+    background-color: #dcdcdc;
+  }
+  .dropMenu .dropList>ul li[aria-selected="true"] {
+    cursor: pointer;
+    background-color: #9a9a9a;
+    font-weight: bolder;
+  }
+ .dropMenu .selected svg *{
+    fill: #9a9a9a;
+  }
+
+
+
+  .dropMenu .dropList>ul::-webkit-scrollbar{
+    display: block;
+    width: 3px;
+}
+.dropMenu .dropList>ul::-webkit-scrollbar-thumb{
+    background-color: #6c7275;
+
+}
+[data-invalid=true]{
+  border-top: 2px solid #636363;
+  border-radius: 0 !important;
+  width: calc(100% - 30px) !important;
+  padding-left: 20px !important;
+}
+[data-invalid=true]:hover {
+  cursor: pointer;
+  background-color: #63636300 !important;
+}

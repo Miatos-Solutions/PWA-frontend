@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 
 
+
 // Import views using lazy loading
 const Welcome = lazy(() => import('./views/auths/Welcome'));
 const ForgotPassword = lazy(() => import('./views/auths/ForgotPassword'));
@@ -15,6 +16,12 @@ const Settings = lazy(() => import('./views/profile/Settings/Settings'));
 const ProfileSettings = lazy(() => import('./views/profile/profileSettings/ProfileSettings'));
 const ProfileResets = lazy(() => import('./views/profile/profileSettings/ProfileResets'));
 const PrivateAvatar = lazy(() => import('./views/privateavatar/PrivateAvatar'));
+const PasswordChange = lazy(() => import('./views/profile/passwordchange/PasswordChange'));
+const SubscriptionSettingsPage = lazy(() => import('./views/profile/subscriptionsSettingsPage/SubscriptionSettingsPage'));
+const Wallet = lazy(() => import('./views/wallet/Wallet'));
+const Legal = lazy(() => import('./views/legal/Legal'));
+const Support = lazy(() => import('./views/support/Support'));
+const CallUs = lazy(() => import('./views/support/supportpages/CallUs'));
 
 function App() {
 
@@ -30,6 +37,12 @@ function App() {
         <Route path='/profile-settings' element={<Suspense fallback={<div className="flex items-center justify-center h-[100nivh]">Loading...</div>}><ProfileSettings /></Suspense>} />
         <Route path='/edit-profile' element={<Suspense fallback={<div className="flex items-center justify-center h-[100nivh]">Loading...</div>}><ProfileResets /></Suspense>} />
         <Route path='/private-avatar' element={<Suspense fallback={<div className="flex items-center justify-center h-[100nivh]">Loading...</div>}><PrivateAvatar /></Suspense>} />
+        <Route path='/change-password' element={<Suspense fallback={<div className="flex items-center justify-center h-[100nivh]">Loading...</div>}><PasswordChange /></Suspense>} />
+        <Route path='/subscription-setting' element={<Suspense fallback={<div className="flex items-center justify-center h-[100nivh]">Loading...</div>}><SubscriptionSettingsPage /></Suspense>} />
+        <Route path='/wallet' element={<Suspense fallback={<div className="flex items-center justify-center h-[100nivh]">Loading...</div>}><Wallet /></Suspense>} />
+        <Route path='/legal' element={<Suspense fallback={<div className="flex items-center justify-center h-[100nivh]">Loading...</div>}><Legal /></Suspense>} />
+        <Route path='/support' element={<Suspense fallback={<div className="flex items-center justify-center h-[100nivh]">Loading...</div>}><Support /></Suspense>} />
+        <Route path='/call-us' element={<Suspense fallback={<div className="flex items-center justify-center h-[100nivh]">Loading...</div>}><CallUs /></Suspense>} />
       </Routes>
     </Router>
   )

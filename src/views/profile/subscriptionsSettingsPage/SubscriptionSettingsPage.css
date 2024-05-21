@@ -1,0 +1,387 @@
+.SubscriptionSettingsPage{
+    width: 100vw;
+    max-width: 768px;
+    height: 100vh;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    /* padding: 55px 0; */
+    
+}
+
+
+/* topnav */
+.SubscriptionSettingsPage .topnav{
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    margin: 0;
+    padding: 20px 20px;
+    z-index: 3;
+    box-shadow:-1px 10px 10px rgb(46, 45, 45, 0.098);
+}
+.SubscriptionSettingsPage .topnav .back {
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  display: block;
+}
+.SubscriptionSettingsPage .topnav .back:hover {
+    transform: translateX(10px);
+    transition-duration: 1s;
+}
+.SubscriptionSettingsPage .topnav .back svg{
+    width: 30px;
+    height: 30px;
+    transform: rotate(90deg);
+}
+.SubscriptionSettingsPage .topnav .back svg path{
+    fill: black;
+}
+
+/* topnav end-------------------------------------------------------- */
+/* settings---------------------------------------------------  */
+.SubscriptionSettingsPage .subscriptionSettingsCont{
+    width: 98%;
+    height: fit-content;
+    max-height: calc(100% - 70px);
+    overflow-y: scroll;
+    margin: auto;
+    padding-bottom: 10px;
+}
+.SubscriptionSettingsPage .subscriptionSettingsCont::-webkit-scrollbar{
+    display: none;
+}
+.SubscriptionSettingsPage .subscriptionSettings{
+    width: 100%;
+    height: fit-content;
+    /* overflow-y: scroll; */
+    /* max-height: calc(100% - 55px); */
+    /* border: 2px solid black; */
+    margin: 10px auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.SubscriptionSettingsPage .subscriptionSettings .subscriptionSetting {
+  width: 100%;
+  height: fit-content;
+  color: rgb(68, 68, 68);
+  font-size: 20px;
+}
+
+.SubscriptionSettingsPage .subscriptionSettings .subscriptionSetting .cardContent {
+  width: 100%;
+  height: fit-content;
+}
+.SubscriptionSettingsPage .subscriptionSettings .subscriptionSetting .cardContent .buttonControl {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.SubscriptionSettingsPage .subscriptionSettings .subscriptionSetting .cardContent .buttonControl button{
+    width: calc(90% / 2);
+    padding: 15px 0;
+    border-radius: 10px;
+    font-size: 25px;
+    margin-top: 20px;
+    height: 4rem;
+}
+.SubscriptionSettingsPage .subscriptionSettings .subscriptionSetting .cardContent .buttonControl button:first-child{
+    background-color: #aeaeae00;
+    color: #696969;
+    border: 2px solid #696969;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.SubscriptionSettingsPage .subscriptionSettings .subscriptionSetting .cardContent .buttonControl button:last-child{
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid #696969;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.SubscriptionSettingsPage .subscriptionSettings .subscriptionSetting .cardContent:not(:first-child){
+    border-bottom: 2px solid #aeaeae82;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.SubscriptionSettingsPage .subscriptionSettings .subscriptionSetting .cardContent:last-child{
+    border-bottom: none;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+.SubscriptionSettingsPage .subscriptionSettings .subscriptionSetting .cardContent .top {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.SubscriptionSettingsPage .subscriptionSettings .subscriptionSetting .cardContent .top h2{
+    font-size: 20px;
+    width: 100%;
+}
+
+.SubscriptionSettingsPage .subscriptionSettings .subscriptionSetting .cardContent .others.paidMemberShip{
+    display: none;
+}
+.SubscriptionSettingsPage .subscriptionSettings .subscriptionSetting .cardContent .others.paidMemberShip[data-show=true]{
+    display: block;
+}
+
+.SubscriptionSettingsPage .subscriptionSettings .subscriptionSetting .cardContent .others .priceInput{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.SubscriptionSettingsPage .subscriptionSettings .subscriptionSetting .cardContent .others .priceInput label[data-disabled=true]{
+    background-color: rgba(79, 79, 79, 0.508);
+}
+.SubscriptionSettingsPage .subscriptionSettings .subscriptionSetting .cardContent .others .priceInput label[data-disabled=true] *{
+    cursor: not-allowed;
+    
+}
+
+.SubscriptionSettingsPage .subscriptionSettings .subscriptionSetting .cardContent .others .priceInput label{
+    width: calc(100% - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #aeaeae82;
+    padding: 10px;
+    border-radius: 10px;
+}
+.SubscriptionSettingsPage .subscriptionSettings .subscriptionSetting .cardContent .others .priceInput label i{
+    font-style: normal;
+    color: #696969;
+    font-weight: bolder;
+
+
+}
+.SubscriptionSettingsPage .subscriptionSettings .subscriptionSetting .cardContent .others .priceInput label input{
+    width: calc(100% - 50px);
+    height: 30px;
+    background-color: #00000000;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+    font-size: 20px;
+    color: #696969;
+    
+    
+}
+input::-webkit-inner-spin-button{
+    display: none;
+}
+.SubscriptionSettingsPage .subscriptionSettings .subscriptionSetting .cardContent .others .priceInput .edit {
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+  border-left: 2px solid #696969;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.SubscriptionSettingsPage .subscriptionSettings .subscriptionSetting .cardContent .others .priceInput .edit svg{
+    width: 100%;
+    height: 100%;
+}
+.SubscriptionSettingsPage .subscriptionSettings .subscriptionSetting .cardContent .others .priceInput .edit:hover svg #dash{
+    fill: #474747;
+    opacity: 100% !important;
+}
+#dash[data-dash-select=true]{
+    fill: #474747;
+    animation: blink 2s linear infinite;
+
+    
+}
+.SubscriptionSettingsPage .subscriptionSettings .subscriptionSetting .cardContent .dropDownContentBox{
+    width: 100%;
+    height: fit-content;
+}
+.SubscriptionSettingsPage .subscriptionSettings .subscriptionSetting .cardContent .dropDownContentBox .selected{
+    color: black;
+}
+.SubscriptionSettingsPage .subscriptionSettings .subscriptionSetting .cardContent .dropDownContentBox .dropList ul{
+    width: 98%;
+    margin: auto;
+}
+.SubscriptionSettingsPage .subscriptionSettings .subscriptionSetting .cardContent .dropDownContentBox .dropList ul li{
+    width: calc(100% - 30px);
+    margin: 10px 5px;
+}
+
+.SubscriptionSettingsPage .subscriptionSettings .subscriptionSetting .cardContent .bundleCard{
+    width: 100%;
+    height: fit-content;
+    padding: 10px 0;
+    border-radius: 10px;
+    border: 2px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.SubscriptionSettingsPage .subscriptionSettings .subscriptionSetting .cardContent .bundleCard .bundleICN{
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+
+}
+.SubscriptionSettingsPage .subscriptionSettings .subscriptionSetting .cardContent .bundleCard .bundleICN svg{
+    width: 50%;
+    height: 50%;
+}
+.SubscriptionSettingsPage .subscriptionSettings .subscriptionSetting .cardContent .bundleCard .cancel{
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+}
+.SubscriptionSettingsPage .subscriptionSettings .subscriptionSetting .cardContent .bundleCard .cancel svg{
+    width: 50%;
+    height: 50%;
+}
+.SubscriptionSettingsPage .subscriptionSettings .subscriptionSetting .cardContent .buttonControl.single{
+    width: 100%;
+    height: fit-content;
+}
+
+.SubscriptionSettingsPage .subscriptionSettings .subscriptionSetting .cardContent .buttonControl.single button{
+    width: 100%;
+    height: fit-content;
+    padding: 10px 0;
+    margin-top: 20px;
+    background-color: #474747;
+    color: white;
+    border: none;
+}
+
+
+/* toggle selector */
+
+.toggle-selector{
+    width: 50px;
+    height: 25px;
+    background-color: rgb(137, 137, 137);
+    border-radius: 30px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+
+.toggle-selector::before{
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 2.5px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    animation: toggleOff 100ms linear forwards;
+    z-index: 1;
+}
+.toggle-selector::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgb(71, 71, 71);
+    z-index: 0;
+    border-radius: 30px;
+    animation: toggleOffBgSlide 100ms linear forwards;
+}
+.toggle-selector[data-selected=true]::after{
+    animation: toggleOnBgSlide 100ms linear forwards;
+}
+.toggle-selector[data-selected=true]::before{
+    animation: toggleOn 100ms linear forwards;
+}
+
+
+/* toggle selector-------------------------------------------------- */
+
+
+/* settings end--------------------------------------------------- */
+
+
+@media screen and (max-width: 400px) {
+    .bundleText{
+        font-size: 4dvw;
+    }
+}
+
+
+/* animation */
+
+@keyframes toggleOn {
+    from{
+        left: 2.5px;
+    }
+    to{
+        left: calc(100% - 22.5px);
+    }
+}
+@keyframes toggleOff {
+    from{
+        left: calc(100% - 22.5px);
+    }
+    to{
+        left: 2.5px;
+    }
+}
+
+@keyframes toggleOnBgSlide {
+    from{
+        left: -100%;
+    }
+    to{
+        left: 0;
+    }
+}
+@keyframes toggleOffBgSlide {
+    from{
+        left: 0;
+    }
+    to{
+        left: -100%;
+    }
+}
+@keyframes blink {
+    0%{
+        opacity: 100%;
+    }
+    25%{
+        opacity: 75%;
+    }
+    50%{
+        opacity: 0%;
+    }
+    75%{
+        opacity: 75%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+/* animation ------------------------------------------*/

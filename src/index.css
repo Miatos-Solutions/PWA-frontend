@@ -343,9 +343,6 @@ input:hover, textarea:hover {
     overflow: hidden;
     position: relative;
 }
-.swiper-card{
-  height:74vh;
-}
 
   .Home-page{
     padding-bottom: 20px;
@@ -375,9 +372,6 @@ input:hover, textarea:hover {
 }
 .Post-container-5{
   max-width: 8.1rem;
-}
-.swiper-card{
-  height: 60vh;
 }
 
 }

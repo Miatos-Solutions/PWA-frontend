@@ -1,0 +1,21 @@
+.SubscriptionSettingCard{
+    width: 100%;
+    height: fit-content;
+    display: block;
+    cursor: pointer;
+}
+.SubscriptionSettingCard h3{
+    margin: 10px 0;
+    font-size: 15px;
+    color: rgb(146, 146, 146);
+}
+
+/* .SubscriptionSettingCard:hover{
+    background-color: rgb(240, 240, 240) !important;
+    transition-duration: 200ms;
+
+}
+.SubscriptionSettingCard:hover h3{
+    color: rgb(99, 99, 99);
+    transition-duration: 200ms;
+} */
