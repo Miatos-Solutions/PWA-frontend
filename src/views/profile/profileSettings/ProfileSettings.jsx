@@ -44,7 +44,7 @@ function ProfileSettings() {
                 </span>
               </button>
           </div>
-          <Link to='#' className='Change-password-link flex items-center justify-between p-6'>
+          <Link to='/change-password' className='Change-password-link flex items-center justify-between p-6'>
               <span className='font-bold text-xl flex'>
                   <h3>Change Password</h3>
               </span>
