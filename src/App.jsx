@@ -22,6 +22,7 @@ const Wallet = lazy(() => import('./views/wallet/Wallet'));
 const Legal = lazy(() => import('./views/legal/Legal'));
 const Support = lazy(() => import('./views/support/Support'));
 const CallUs = lazy(() => import('./views/support/supportpages/CallUs'));
+const NotificationSettings = lazy(() => import('./views/notificationsettings/NotificationSettings'));
 
 function App() {
 
@@ -43,6 +44,7 @@ function App() {
         <Route path='/legal' element={<Suspense fallback={<div className="flex items-center justify-center h-[100nivh]">Loading...</div>}><Legal /></Suspense>} />
         <Route path='/support' element={<Suspense fallback={<div className="flex items-center justify-center h-[100nivh]">Loading...</div>}><Support /></Suspense>} />
         <Route path='/call-us' element={<Suspense fallback={<div className="flex items-center justify-center h-[100nivh]">Loading...</div>}><CallUs /></Suspense>} />
+        <Route path='/notification-settings' element={<Suspense fallback={<div className="flex items-center justify-center h-[100nivh]">Loading...</div>}><NotificationSettings /></Suspense>} />
       </Routes>
     </Router>
   )

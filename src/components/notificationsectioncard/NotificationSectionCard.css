@@ -1,0 +1,9 @@
+.NotificationSectionCard{
+    width: 100%;
+    height: fit-content;
+}
+.NotificationSectionCard h3{
+    color: black;
+    margin: 0;
+    margin-bottom: 20px;
+}

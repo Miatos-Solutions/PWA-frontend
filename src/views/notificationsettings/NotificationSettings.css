@@ -1,0 +1,94 @@
+.NotificationSettingsPage{
+    width: 100vw;
+    max-width: 768px;
+    height: 100vh;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    /* padding: 55px 0; */
+    
+}
+
+
+/* topnav */
+.NotificationSettingsPage .topnav{
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    margin: 0;
+    padding: 10px 0;
+    z-index: 3;
+    box-shadow:-1px 10px 10px rgb(46, 45, 45, 0.098);
+}
+.NotificationSettingsPage .topnav .back {
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  display: block;
+}
+.NotificationSettingsPage .topnav .back:hover {
+    transform: translateX(10px);
+    transition-duration: 1s;
+}
+.NotificationSettingsPage .topnav .back svg{
+    width: 30px;
+    height: 30px;
+    transform: rotate(90deg);
+}
+.NotificationSettingsPage .topnav .back svg path{
+    fill: black;
+}
+
+/* topnav end-------------------------------------------------------- */
+
+
+/* settings---------------------------------------------------  */
+.NotificationSettingsPage .NotificationSettingsCont{
+    width: 98%;
+    height: fit-content;
+    max-height: calc(100% - 70px);
+    overflow-y: scroll;
+    margin: auto;
+    padding-bottom: 10px;
+}
+.NotificationSettingsPage .NotificationSettingsCont::-webkit-scrollbar{
+    display: none;
+}
+.NotificationSettingsPage .NotificationSettings{
+    width: 100%;
+    height: fit-content;
+    margin: 10px auto;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 10px;
+}
+.NotificationSettingsPage .NotificationSettings li{
+    width: 100%;
+    height: fit-content;
+
+}
+.NotificationSettingsPage .NotificationSettings li .cardContent{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.NotificationSettingsPage .NotificationSettings li .cardContent b{
+    color: rgb(137, 137, 137);
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+}
+.NotificationSettingsPage .NotificationSettings li .cardContent b span{
+    font-weight: normal;
+    color: rgb(183, 181, 181);
+    font-size: 12px;
+}
+/* ---------------------------------------------------------------------- */
