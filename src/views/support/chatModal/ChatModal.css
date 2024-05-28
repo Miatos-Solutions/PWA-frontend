@@ -1,10 +1,17 @@
 .ChatModalMessenger{
     background: rgb(205, 205, 205);
     width: 100%;
-    height: 39rem;
+    height: 90rem;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     overflow: hidden;
+}
+.Chats-Display{
+    overflow: -webkit-scrollbar;
+  -webkit-overflow-scrolling: touch; /* Optional: for smooth scrolling on iOS */
+}
+.Chats-Display::-webkit-scrollbar{
+    display: none;
 }
 .Received{
     border-top-left-radius: 8px;

@@ -1,0 +1,450 @@
+.Saved{
+    width: 100%;
+    height: fit-content;
+}
+button{
+    cursor: pointer;
+}
+.Saved .top{
+    width: 98%;
+    height: fit-content;
+    margin-top: 20px;
+    margin: auto;
+}
+.Saved .top header{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+.Saved .top header b{
+    color: black;
+    font-size: 25px;
+}
+
+
+.Saved .listCards {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    gap: 10px;
+
+}
+.Saved .listCards .card {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Saved .listCards .card .ccCard {
+    width: calc(90% - 100px);
+}
+.Saved .listCards .card .ccCard .userCCs {
+    padding: 20px 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #898989;
+    font-size: 20px;
+}
+
+.Saved .listCards .card .ccCard .userCCs .cardTypeNum {
+    gap: 10px;
+}
+
+.del{
+    width: 20px;
+    height: 20px;
+    border-left: 2px solid #898989;
+    padding: 10px;
+    cursor: pointer;
+}
+.del svg{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+.addCardSection {
+    width: calc(100% - 10px);
+    height: fit-content;
+    margin: 50px auto;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.addCardSection > label{
+    width: 100%;
+    height: fit-content;
+}
+.addCardSection  > label h3{
+    color: black;
+    margin-bottom: 25px;
+
+}
+.addCardSection > label .bankListDrop{
+    width: 100%;
+    height: fit-content;
+}
+.addCardSection > label .bankListDrop .bankSelection .options {
+    color: black;
+    border: 2px solid #898989;
+    border-radius: 10px;    
+}
+.addCardSection > label .bankListDrop .bankSelection .options .bankOption{
+    font-weight: bolder;
+}
+.addCardSection > label .bankListDrop .bankSelection .valueCont{
+    border: 2px solid #898989;
+    border-radius: 10px;
+}
+.addCardSection > label .bankListDrop .bankSelection .valueCont .valueTxt{
+    color: black;
+}
+.addCardSection > label .bankListDrop .selected .text{
+    color: black;
+}
+
+.addCardSection > label .inputCCNum{
+    width: 100%;
+    height: fit-content;
+}
+.addCardSection > label .inputCCNum .INP {
+  width: calc(100% - 20px);
+  height: fit-content;
+  border: 2px solid #898989;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0px 10px;
+}
+.addCardSection > label .inputCCNum .INP .ICN-CC{
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+}
+.addCardSection > label .inputCCNum .INP .ICN-CC svg{
+    width: 100%;
+    height: 100%;
+}
+.addCardSection > label .inputCCNum .INP input{
+    width: calc(100% - 40px);
+    height: fit-content;
+    padding: 10px 0;
+    background-color: #00000000;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    margin-left: 10px;
+    color: #898989;
+}
+.addCardSection>span{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+.addCardSection>span .CheckBox{
+    border: 2px solid #898989;
+}
+.addCardSection>button{
+    width: 90%;
+    height: fit-content;
+    font-size: 20px;
+    padding: 15px 0;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+/* add account number */
+
+.Saved .listCards .bank{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Saved .listCards .bank .card {
+    width: calc(100% - 100px);
+}
+.Saved .listCards .bank .card .bankCardContent{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid #898989;
+    padding: 10px;
+    border-radius: 10px;
+}
+.Saved .listCards .bank .card .bankCardContent .content {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.Saved .listCards .bank .card .bankCardContent .content .ICN-bank{
+    width: 20px;
+    height: 20px;
+}
+.Saved .listCards .bank .card .bankCardContent .content .ICN-bank svg{
+    width: 100%;
+    height: 100%;
+}
+.Saved .listCards .bank .card .bankCardContent .content .context {
+    color: black;
+    font-size: 17px;
+}
+.Saved .listCards .bank .card .bankCardContent .ICN-arr{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.Saved .listCards .bank .card .bankCardContent .ICN-arr:hover{
+    transform: translate(-5px);
+    transition-duration: 1s;
+
+}
+
+.Saved .listCards .bank .card .bankCardContent .ICN-arr svg{
+    width: 100%;
+    height: 100%;
+    transform: rotate(-90deg);
+}
+
+
+
+
+
+.addAccountNumberSection {
+    width: calc(100% - 10px);
+    height: fit-content;
+    margin: 50px auto;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.addAccountNumberSection > label{
+    width: 100%;
+    height: fit-content;
+}
+.addAccountNumberSection  > label h3{
+    color: black;
+    margin-bottom: 25px;
+}
+.addAccountNumberSection > label .bankListDrop{
+    width: 100%;
+    height: fit-content;
+}
+.addAccountNumberSection > label .bankListDrop .bankSelection .options {
+    color: black;
+    border: 2px solid #898989;
+    border-radius: 10px;    
+}
+.addAccountNumberSection > label .bankListDrop .bankSelection .options .bankOption{
+    font-weight: bolder;
+}
+.addAccountNumberSection > label .bankListDrop .bankSelection .valueCont{
+    border: 2px solid #898989;
+    border-radius: 10px;
+}
+.addAccountNumberSection > label .bankListDrop .bankSelection .valueCont .valueTxt{
+    color: black;
+}
+.addAccountNumberSection > label .bankListDrop .selected .text{
+    color: black;
+}
+
+.addAccountNumberSection > label .inputAccNum{
+    width: 100%;
+    height: fit-content;
+}
+.addAccountNumberSection > label .inputAccNum .INP {
+  width: calc(100% - 20px);
+  height: fit-content;
+  border: 2px solid #898989;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0px 10px;
+}
+.addAccountNumberSection > label .inputAccNum .INP .ICN-paste{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.addAccountNumberSection > label .inputAccNum .INP .ICN-paste::before{
+    content: "Paste";
+    color: black;
+    font-style: normal;
+    font-weight: bolder;
+}
+.addAccountNumberSection > label .inputAccNum .INP .ICN-paste svg{
+    width: 25px;
+    height: 25px;
+}
+.addAccountNumberSection > label .inputAccNum .INP input{
+    width: calc(100% - 40px);
+    height: fit-content;
+    padding: 10px 0;
+    background-color: #00000000;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    margin-left: 10px;
+    color: #898989;
+}
+.addAccountNumberSection>span{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+.addAccountNumberSection>span .CheckBox{
+    border: 2px solid #898989;
+}
+.addAccountNumberSection>button{
+    width: 90%;
+    height: fit-content;
+    font-size: 20px;
+    padding: 15px 0;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+/* --------------------------------------- */
+
+
+/* withdraw Section---------------------------------------------------------------------- */
+
+.withdrawSection{
+    width: calc(100% - 10px);
+    height: fit-content;
+    margin: 50px auto;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.withdrawSection > label{
+    width: 100%;
+    height: fit-content;
+}
+.withdrawSection  > label h3{
+    color: black;
+    margin-bottom: 25px;
+
+}
+
+.withdrawSection > label .inputAccNum{
+    width: 100%;
+    height: fit-content;
+}
+.withdrawSection > label .inputAccNum .INP {
+  width: calc(100% - 20px);
+  height: fit-content;
+  border: 2px solid #898989;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0px 10px;
+}
+.withdrawSection > label .inputAccNum .INP .ICN-dollar{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.withdrawSection > label .inputAccNum .INP .ICN-dollar::before{
+    content: "$";
+    color: #898989;
+    font-style: normal;
+    font-weight: bolder;
+    font-size: 17px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.withdrawSection > label .inputAccNum .INP .ICN-dollar svg{
+    width: 25px;
+    height: 25px;
+}
+.withdrawSection > label .inputAccNum .INP input{
+    width: calc(100% - 40px);
+    height: fit-content;
+    padding: 10px 0;
+    background-color: #00000000;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    margin-left: 10px;
+    color: #898989;
+}
+.withdrawSection>span{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+.withdrawSection>span .CheckBox{
+    border: 2px solid #898989;
+}
+.withdrawSection>button{
+    width: 90%;
+    height: fit-content;
+    font-size: 20px;
+    padding: 15px 0;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+/* ------------------------------------------------------------------ */
+
+
+
+
+@media screen and (max-width: 500px) {
+    .Saved .top header b{
+        font-size: calc(5dvw + 10px);
+    }
+    .Saved .listCards .card .ccCard .userCCs {
+        font-size: 4dvw;
+    }
+    .userCCs .ICN-cardType .visa {
+        font-size: 4dvw;
+    }
+}

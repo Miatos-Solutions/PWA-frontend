@@ -1,0 +1,235 @@
+.WalletMain{
+    width: 100%;
+    height: fit-content;
+}
+.WalletMain .top{
+    width: 98%;
+    height: fit-content;
+    margin-top: 20px;
+    margin: auto;
+}
+.WalletMain .top header{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+.WalletMain .top header b{
+    color: black;
+    font-size: 25px;
+}
+.WalletMain .top header button{
+    background-color: #00000000;
+    color: #898989;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 10px 20px;
+    padding-right: 0;
+}
+.WalletMain .top header button::before{
+    content: "+";
+    margin-right: 5px;
+    font-size: 20px;
+    display: inline-block;
+}
+.WalletMain .top .balanceCard{
+    width: calc(100%);
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow:  1px 1px 10px #2e2d2d19,
+                -1px -1px 10px #2e2d2d19;
+    border-radius: 15px;
+}
+.WalletMain .top .balanceCard .balance {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+    font-size: 35px;
+    border-bottom: 2px solid #d5d5d5;
+    padding: 30px 0;
+}
+.WalletMain .top .balanceCard .balance::before{
+    content: "Total Balance";
+    color: #898989;
+    font-size: 20px;
+    font-weight: normal;
+}
+.WalletMain .top .balanceCard .transBtn {
+  width: 80%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 25px auto;
+}
+.WalletMain .top .balanceCard .transBtn button{
+    width: calc((100%/2) - 10px);
+    background-color: #0000;
+    padding: 18px 0;
+    color: #898989;
+    border: 2px solid #898989;
+    font-size: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.WalletMain .top .balanceCard .transBtn button:hover{
+    background-color: #898989;
+    color: white;
+    border: none;
+    padding: 20px 0;
+    transition-duration: 200ms;
+}
+.WalletMain main{
+    width: calc(100% - 55px);
+    height: fit-content;
+    padding: 20px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow:  1px 1px 10px #2e2d2d19,
+                -1px -1px 10px #2e2d2d19;
+    border-radius: 15px;
+}
+.WalletMain main header{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+.WalletMain main header b{
+    color: black;
+    font-size: 25px;
+}
+.WalletMain main header button{
+    background-color: #00000000;
+    color: #898989;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 10px;
+}
+.WalletMain main header button svg{
+    width: 20px;
+    height: 20px;
+    transform: rotate(-90deg);
+}
+.WalletMain main header button svg path{
+    fill: black;
+}
+.WalletMain main header button:hover {
+    transform: translateX(10px);
+    transition-duration: 1s;
+}
+.WalletMain main .transactionHistoryCont{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+    list-style-type: none;
+    padding: 0;
+}
+.WalletMain main .transactionHistoryCont li{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.WalletMain main .transactionHistoryCont li:not(:first-child){
+    margin-top: 20px;
+}
+.WalletMain main .transactionHistoryCont li .transactionType{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+.WalletMain main .transactionHistoryCont li .transactionType .ICN-transactionType{
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-color: #4f4e4e;
+}
+
+.WalletMain main .transactionHistoryCont li .transactionType .ICN-transactionType svg{
+    width: 80%;
+    height: 80%;
+}
+.ICN-transactionType .cls-1,.cls-2{
+    fill:none;
+    stroke:white;
+    stroke-miterlimit:10;
+    stroke-width:1.91px;
+}
+.ICN-transactionType .cls-1{
+    stroke-linecap:square;
+}
+.WalletMain main .transactionHistoryCont li .transactionPrice{
+    font-size: 20px;
+}
+
+
+@media screen and (max-width: 400px) {
+    .WalletMain .top header b{
+        font-size: calc(4dvw + 10px);
+    }
+    .WalletMain .top header button{
+        font-size: 4dvw;
+    }
+    .WalletMain .top header button::before{
+        font-size: 5dvw;
+    }
+    .WalletMain .top .balanceCard .balance {
+        font-size: 10dvw;
+    }
+    .WalletMain .top .balanceCard .balance::before{
+        font-size: 5dvw;
+    }
+    .WalletMain .top .balanceCard .transBtn button{
+        padding: 10px 0;
+        font-size: calc(4dvw + 5px);
+
+    }
+    .WalletMain main header b{
+        font-size: calc(4dvw + 5px);
+    }
+    .WalletMain main header button svg{
+        width: 15px;
+        height: 15px;
+    }
+    .WalletMain main .transactionHistoryCont li .transactionType{
+        font-size: 4dvw;
+    }
+    .WalletMain main .transactionHistoryCont li .transactionPrice{
+        font-size: 4dvw;
+    }
+}

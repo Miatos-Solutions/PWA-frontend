@@ -1,0 +1,64 @@
+.Select{
+    width: 100%;
+    height: fit-content;
+    color: black;
+}
+.valueCont {
+  width: calc(100% - 20px);
+  height: fit-content;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.valueCont .val {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.valueCont .val .valueOthers {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+.valueCont .val .valueOthers img, .valueCont .val .valueOthers svg{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+.valueCont .ICN-drop {
+    width: 20px;
+    height: 20px;
+}
+.valueCont .ICN-drop[data-dropped=false]{
+    transform: rotate(-180deg);
+    transition-duration: 100ms;
+}
+
+.valueCont .ICN-drop svg{
+    width: 100%;
+    height: 100%;
+}
+.options{
+    width: calc(100% - 10px);
+    height: fit-content;
+    border: 2px solid black;
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 5px;
+
+}
+.options #option{
+    width: calc(100% - 20px);
+    height: fit-content;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+.options #option:hover{
+    background-color: #d0d0d0;
+}

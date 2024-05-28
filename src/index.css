@@ -124,6 +124,9 @@ input:hover, textarea:hover {
   .Post-Modal{
     width: 26rem;
   }
+  .Profile-box{
+    margin-bottom: 4rem;
+  }
 }
 @media screen and (min-width: 600px){
   .shadowEffect-footer {
@@ -175,6 +178,9 @@ input:hover, textarea:hover {
     bottom: 0;
     width: 15rem;
     gap: 3rem;
+  }
+  .Profile-box{
+    margin-bottom: 4rem;
   }
 
   .Home-cover {
@@ -319,6 +325,9 @@ input:hover, textarea:hover {
   input:hover, textarea:hover {
     outline: none;
     border: none;
+  }
+  .Profile-box{
+    margin-bottom: 4rem;
   }
 }
 

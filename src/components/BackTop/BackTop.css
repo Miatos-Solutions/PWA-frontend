@@ -1,0 +1,18 @@
+
+/* topnav */
+.topnav{
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+}
+ .topnav .back {
+  width: fit-content;
+  height: fit-content;
+  cursor: pointer;
+  display: block;
+}
+ .topnav .back svg path{
+    fill: black;
+}
+
+/* topnav end-------------------------------------------------------- */

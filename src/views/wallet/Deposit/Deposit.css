@@ -1,0 +1,278 @@
+.Deposit{
+    width: 100%;
+    height: fit-content;
+}
+button{
+    cursor: pointer;
+}
+.Deposit .top{
+    width: 98%;
+    height: fit-content;
+    margin-top: 20px;
+    margin: auto;
+}
+.Deposit .top header{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+.Deposit .top header b{
+    color: black;
+    font-size: 25px;
+}
+
+
+.Deposit .balanceCard{
+    width: calc(100%);
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 15px;
+}
+.Deposit .balanceCard .balance {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+    font-size: 35px;
+    border-bottom: 2px solid #d5d5d5;
+    padding: 30px 0;
+}
+.Deposit .balanceCard .balance::before{
+    content: "Total Balance";
+    color: #898989;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
+.depositCont {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    color: black;
+    font-size: 35px;
+    border-bottom: 2px solid #d5d5d5;
+    padding: 30px 0;
+}
+.depositCont .top {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.depositCont .top button{
+    background-color: #00000000;
+    color: #898989;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 10px 20px;
+    padding-right: 0;
+}
+.depositCont .top button::before{
+    content: "+";
+    margin-right: 5px;
+    font-size: 20px;
+    display: inline-block;
+}
+.depositCont .CCSect {
+    width: calc(100%);
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.depositCont .CCSect .userCCCont {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.depositCont .CCSect .ccItems {
+    width: fit-content;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    list-style-type: none;
+    padding: 0;
+}
+.depositCont .CCSect .ccItems li{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #898989;
+}
+.depositCont .CCSect .ccItems li.pres {
+    width: 15px;
+    height: 15px;
+}
+
+
+
+.depositCont .amountInputSection {
+    width: 100%;
+    height: fit-content;
+}
+.depositCont .amountInputSection .amountInput {
+    width: calc(90% - 60px);
+    height: fit-content;
+    margin: auto;
+    padding: 30px;
+    box-shadow:  1px 1px 10px #2e2d2d19,
+                -1px -1px 10px #2e2d2d19;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.depositCont .amountInputSection .amountInput h3{
+    font-size: 25px;
+    margin: 0;
+    font-weight: normal;
+    color: #898989;
+}
+.depositCont .amountInputSection .amountInput .staticAmount {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    list-style-type: none;
+    padding: 0;
+}
+.depositCont .amountInputSection .amountInput .staticAmount li{
+    background-color: #d5d5d5;
+    color: #898989;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    font-size: 20px;
+    padding: 10px 0;
+}
+.depositCont .amountInputSection .amountInput .staticAmount li:not(:last-child){
+    margin-right: 20px;
+}
+
+.depositCont .amountInputSection .custom{
+    width: 100%;
+    height: fit-content;
+}
+.depositCont .amountInputSection .custom .customInput h3{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.depositCont .amountInputSection .custom .priceInput{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  
+  .depositCont .amountInputSection .custom .priceInput label{
+      width: calc(100%);
+      height: fit-content;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #aeaeae82;
+      padding: 10px;
+      border-radius: 10px;
+  }
+  .depositCont .amountInputSection .custom .priceInput label i{
+      font-style: normal;
+      color: #696969;
+      font-weight: bolder;
+      font-size: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+  }
+  .depositCont .amountInputSection .custom .priceInput label input{
+      width: calc(100% - 50px);
+      height: 30px;
+      background-color: #00000000;
+      outline: none;
+      border: none;
+      padding-left: 20px;
+      padding-top: 5px;
+      font-size: 20px;
+      color: #696969;
+      
+      
+  }
+  input::-webkit-inner-spin-button{
+      display: none;
+  }
+
+  .depositCont .amountInputSection button.confirm {
+    width: calc(90%);
+    height: fit-content;
+    margin: 40px auto;
+    padding: 10px 0;
+    border-radius: 10px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+
+
+
+@media screen and (max-width: 400px) {
+    .Deposit .top header b{
+        font-size: calc(5dvw + 10px);
+    }
+    .Deposit .balanceCard .balance {
+        font-size: 10dvw;
+    }
+    .Deposit .balanceCard .balance::before{
+        font-size: 5dvw;
+    }
+    .depositCont .userCCs {
+        padding: 50px 20px;
+        font-size: 4dvw;
+    }
+    .ICN-cardType .visa {
+        font-size: 5dvw;
+    }
+    .depositCont .amountInputSection .amountInput .staticAmount {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+    .depositCont .amountInputSection .amountInput .staticAmount li{
+        font-size: 4dvw;
+    }
+    .depositCont .amountInputSection .amountInput .staticAmount li:not(:last-child){
+        margin-right: 0;
+    }
+
+}
