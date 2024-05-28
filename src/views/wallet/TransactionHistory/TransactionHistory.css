@@ -1,0 +1,137 @@
+.TransactionHistory{
+    width: 100%;
+    height: fit-content;
+}
+.TransactionHistory .top{
+    width: 98%;
+    height: fit-content;
+    margin-top: 20px;
+    margin: auto;
+}
+.TransactionHistory .top header{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px auto;
+}
+.TransactionHistory .top header b{
+    color: black;
+    font-size: 25px;
+}
+.TransactionHistory .transactionHistoryCont {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: black;
+
+}
+.TransactionHistory .transactionHistoryCont .dateCard {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.TransactionHistory .transactionHistoryCont .dateCard .date {
+  padding-left: 10px;
+  color: #898989;
+  font-weight: normal;
+}
+.TransactionHistory .transactionHistoryCont .dateCard ul{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+.TransactionHistory .transactionHistoryCont .dateCard ul li{
+    width: calc(100% - 50px);
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    box-shadow:  1px 1px 10px #2e2d2d19,
+                -1px -1px 10px #2e2d2d19;
+    border-radius: 15px;
+    padding: 20px;
+}
+.TransactionHistory .transactionHistoryCont .dateCard ul li:not(:first-child){
+    margin-top: 20px;
+}
+.TransactionHistory .transactionHistoryCont .dateCard ul li .transactionType{
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+}
+.TransactionHistory .transactionHistoryCont .dateCard ul li .transactionType .ICN-transactionType{
+    width: 25px;
+    height: 25px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 20px;
+    background-color: #4f4e4e;
+}
+
+.TransactionHistory .transactionHistoryCont .dateCard ul li .transactionType .ICN-transactionType svg{
+    width: 80%;
+    height: 80%;
+}
+.ICN-transactionType .cls-1,.cls-2{
+    fill:none;
+    stroke:white;
+    stroke-miterlimit:10;
+    stroke-width:1.91px;
+}
+.ICN-transactionType .cls-1{
+    stroke-linecap:square;
+}
+.TransactionHistory .transactionHistoryCont .dateCard ul li .transactionPrice{
+    font-size: 20px;
+}
+
+b.end{
+    color: #898989;
+}
+
+
+@media screen and (max-width: 400px) {
+    .TransactionHistory .top header b{
+        font-size: calc(5dvw + 10px);
+    }
+    .TransactionHistory .transactionHistoryCont .dateCard .date {
+        font-size: 5dvw;
+    }
+    .TransactionHistory .transactionHistoryCont .dateCard ul li .transactionType{
+        font-size: 4dvw;
+    }
+    .TransactionHistory .transactionHistoryCont .dateCard ul li .transactionType .ICN-transactionType{
+        width: 20px;
+        height: 20px;
+    }
+    .TransactionHistory .transactionHistoryCont .dateCard ul li .transactionType .ICN-transactionType svg{
+        width: 90%;
+        height: 90%;
+    }
+    .TransactionHistory .transactionHistoryCont .dateCard ul li .transactionPrice{
+        font-size: 4dvw;
+    }
+}

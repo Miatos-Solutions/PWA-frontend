@@ -1,0 +1,85 @@
+
+.userCCs {
+    width: calc(100%);
+    height: fit-content;
+    padding: 50px 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #898989;
+    font-size: 20px;
+    color: black;
+}
+ .userCCs .cardTypeNum {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.ICN-cardType{
+    width: fit-content;
+    height: fit-content;
+    border: 5px solid black;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+.ICN-cardType .visa {
+    font-weight: bolder;
+    font-size: 20px;
+}
+.ICN-cardType .mastercard {
+    font-weight: bolder;
+    font-size: 7px;
+    font-style: normal;
+    padding-top: 25px;
+    position: relative;
+}
+.ICN-cardType .mastercard::before{
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 20px);
+}
+.ICN-cardType .mastercard::after{
+    content: "";
+    width: 25px;
+    height: 25px;
+    background-color: black;
+    border: 3px solid #898989;
+    border-top: none;
+    border-bottom: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: calc(50% - 7px);
+}
+@media screen and (max-width: 500px) {
+    .userCCs .ICN-cardType{
+        zoom: 80%;
+    }
+    .userCCs .ICN-cardType .visa {
+        font-size: 4dvw;
+    }
+    .ICN-cardType .mastercard::before{
+        width: 20px;
+        height: 20px;
+        left: calc(50% - 15px);
+    }
+    .ICN-cardType .mastercard::after{
+        width: 20px;
+        height: 20px;
+        left: calc(50% - 5px);
+    }
+}

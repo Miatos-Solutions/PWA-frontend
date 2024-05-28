@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import ChatModal from './ChatModal';
+import ChatModal from './chatModal/ChatModal';
 import FAQsModal from './FAQsModal';
 
 const SupportData = [

@@ -1,0 +1,72 @@
+.WithdrawRes{
+    width: calc(100% - 20px);
+    height: fit-content;
+    background-color: #898989;
+    padding: 40px 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.WithdrawRes .topDrag {
+    width: calc(100% - 5px);
+    height: 30px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: grabbing;
+}
+.WithdrawRes .topDrag::before{
+    content: "";
+    width: 100px;
+    height: 5px;
+    background-color: rgba(255, 255, 255, 0.37);
+    display: inline-block;
+    border-radius: 20px;
+}
+.WithdrawRes .withdrawn {
+    width: calc(100% - 40px);
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+
+}
+.WithdrawRes .withdrawn .content {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    color: black;
+
+}
+.WithdrawRes .withdrawn .content span{
+    font-weight: 400;
+    font-size: 15px;
+
+
+}
+.WithdrawRes .withdrawn .content b {
+    font-weight: bolder;
+    font-size: 25px;
+}
+.WithdrawRes .withdrawn button{
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 30px;
+    border-radius: 10px;
+    background-color: #00000000;
+    color: black;
+    border: 1px solid black;
+
+}

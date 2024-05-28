@@ -1,0 +1,21 @@
+.WalletPage{
+    width: 100vw;
+    max-width: 768px;
+    height: 100vh;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+    /* padding: 55px 0; */
+}
+
+.WalletPageContent{
+    width: 98%;
+    height: fit-content;
+    max-height: calc(100% - 70px);
+    overflow-y: scroll;
+    margin: auto;
+    padding-bottom: 10px;
+}
+.WalletPageContent::-webkit-scrollbar{
+    display: none;
+}
