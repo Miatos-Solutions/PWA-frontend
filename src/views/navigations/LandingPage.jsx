@@ -131,7 +131,7 @@ function TabNavigator() {
   );
 }
 
-export default function LandingPage() {
+export default function LandingPage(){
   return (
     <div className='Display-Tabs-Screen h-screen bg-white'>
       <TabNavigator/>

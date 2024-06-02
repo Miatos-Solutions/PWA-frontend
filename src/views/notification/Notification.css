@@ -1,0 +1,113 @@
+.notifications {
+    background-color: #fff;
+    width: 400px;
+    margin-right: -20px;
+    margin-top: 0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-y: auto;
+    position: relative;
+}
+
+.timeframe {
+    margin-bottom: 20px;
+}
+
+.timeframe h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.notification {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 15px;
+}
+
+.user-icon {
+    width: 40px;
+    height: 40px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.notification-details {
+    flex-grow: 1;
+    font-size: 14px;
+    color: #555;
+    display: flex;
+    flex-direction: column;
+}
+
+.user-name {
+    font-weight: bold;
+    color: #333;
+}
+
+.action {
+    margin-top: 3px;
+}
+
+.action-button {
+    background-color: #333;
+    color: #ddd;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 12px;
+    align-self: flex-end;
+}
+
+.action-button:hover {
+    color: #fff;
+    background-color: #6c7275;
+}
+
+.arrow-button {
+    display: none;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.arrow-button:hover {
+    background-color: #555;
+}
+
+@media (max-width: 600px) {
+    .notifications {
+        margin-top: -50px;
+        margin-right: 0;
+        width: 500px;
+        border-radius: 0;
+        box-shadow: none;
+        max-height: none;
+        padding-top: 60px;
+    }
+
+    .arrow-button {
+        display: flex;
+    }
+}
+
+.notification-img{
+    width: 40px;
+    height: 40px;
+    background-color: #cccccc;
+    border-radius: 5px;
+}

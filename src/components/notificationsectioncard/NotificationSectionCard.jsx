@@ -33,9 +33,8 @@ function NotificationSectionCard({sectionName, children}) {
 
 
   return (
-    <section className={"NotificationSectionCard "+className}>
-        <h3>{capitalizeSentence(sectionName)}</h3>
-
+    <section className={"NotificationSectionCard " + className}>
+        <h3 className="block md:hidden">{capitalizeSentence(sectionName)}</h3>
         <div className="sectionContent">
             {children}
         </div>

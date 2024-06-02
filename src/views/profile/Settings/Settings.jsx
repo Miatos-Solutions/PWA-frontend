@@ -17,7 +17,7 @@ const settingsData = [
         <path fillRule="evenodd" clipRule="evenodd" d="M21.6526 8.261C21.879 9.14008 22 10.0613 22 11.011C22 17.0821 17.0711 22 11 22C4.92892 22 0 17.0821 0 11.011C0 4.93992 4.92892 0.011 11 0.011C13.3659 0.011 15.5549 0.7645 17.3498 2.03775L18.9246 0L20.6983 5.511H14.6667L16.2277 3.49067C14.7427 2.45667 12.9443 1.84433 11 1.84433C5.94 1.84433 1.83333 5.95192 1.83333 11.011C1.83333 16.071 5.94 20.1777 11 20.1777C16.0591 20.1777 20.1667 16.071 20.1667 11.011C20.1667 10.0531 20.0191 9.12908 19.7468 8.261H21.6526ZM14.6667 15.5833H7.33333V10.0833H8.25V8.25C8.25 6.732 9.482 5.5 11 5.5C12.518 5.5 13.75 6.732 13.75 8.25V10.0833H14.6667V15.5833ZM10.0833 8.25V10.0833H11.9167V8.25C11.9167 7.744 11.506 7.33333 11 7.33333C10.494 7.33333 10.0833 7.744 10.0833 8.25Z" fill="#686868" />
         </svg>,
         title: 'Privacy',
-        link: '#'
+        link: '/privacy-settings'
     },
     
     {
@@ -64,7 +64,7 @@ const settingsData = [
 
 function Settings() {
   return (
-      <section className='h-[100vh] bg-white flex flex-col gap-9'>
+      <section className='h-[100vh] bg-white flex flex-col md:block -ml-4'>
           <nav className='pl-9 pr-9 pt-[40px]'>
               <Link to='/home'>
                 <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -94,4 +94,4 @@ function Settings() {
   )
 }
 
-export default Settings
+export default Settings;

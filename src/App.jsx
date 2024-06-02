@@ -23,6 +23,11 @@ const Legal = lazy(() => import('./views/legal/Legal'));
 const Support = lazy(() => import('./views/support/Support'));
 const CallUs = lazy(() => import('./views/support/supportpages/CallUs'));
 const NotificationSettings = lazy(() => import('./views/notificationsettings/NotificationSettings'));
+const PrivacySettings = lazy(() => import('./pages/privacy/PrivacyPage.jsx'));
+const Messenger = lazy(() => import('./pages/messenger/MessengerPage.jsx'));
+const AvatarGenerator = lazy(() => import('./views/avatar/AvatarGenerator.jsx'));
+const Notification = lazy(() => import('./pages/notification/NotificationPage.jsx'));
+const ChatDetail = lazy(() => import('./pages/messenger/ChatDetailPage.jsx'));
 
 function App() {
 
@@ -45,6 +50,11 @@ function App() {
         <Route path='/support' element={<Suspense fallback={<div className="flex items-center justify-center h-[100nivh]">Loading...</div>}><Support /></Suspense>} />
         <Route path='/call-us' element={<Suspense fallback={<div className="flex items-center justify-center h-[100nivh]">Loading...</div>}><CallUs /></Suspense>} />
         <Route path='/notification-settings' element={<Suspense fallback={<div className="flex items-center justify-center h-[100nivh]">Loading...</div>}><NotificationSettings /></Suspense>} />
+        <Route path='/avatar-generator' element={<Suspense fallback={<div className="flex items-center justify-center h-[100nivh]">Loading...</div>}><AvatarGenerator /></Suspense>} />
+        <Route path='/privacy-settings' element={<Suspense fallback={<div className="flex items-center justify-center h-[100nivh]">Loading...</div>}><PrivacySettings /></Suspense>} />
+        <Route path='/messenger' element={<Suspense fallback={<div className="flex items-center justify-center h-[100nivh]">Loading...</div>}><Messenger /></Suspense>} />
+        <Route path='/notifications' element={<Suspense fallback={<div className="flex items-center justify-center h-[100nivh]">Loading...</div>}><Notification /></Suspense>} />
+        <Route path="/chat/:index" element={<Suspense fallback={<div className="flex items-center justify-center h-[100nivh]">Loading...</div>}><ChatDetail /></Suspense>}/>
       </Routes>
     </Router>
   )

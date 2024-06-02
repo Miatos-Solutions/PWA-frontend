@@ -3,6 +3,7 @@ import { useSwipeable } from 'react-swipeable';
 import SwiperCard from './SwiperCard';
 
 function Swiper({ profiles, searchTerm }) {
+
   const [shuffledProfiles, setShuffledProfiles] = useState([]);
   const [currentProfileIndex, setCurrentProfileIndex] = useState(0);
   const [likedProfiles, setLikedProfiles] = useState([]);

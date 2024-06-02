@@ -1,0 +1,148 @@
+.PrivacySettingsPage{
+    width: 100vw;
+    max-width: 768px;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    padding-left: -40px;
+    padding-right: -50px;
+     /*padding: 55px 0;*/
+
+}
+
+
+/* topnav */
+.PrivacySettingsPage .topnav{
+    width: 100%;
+    height: fit-content;
+    background-color: white;
+    margin: 0;
+    padding: 10px 0;
+    z-index: 3;
+    box-shadow:-1px 10px 10px rgb(46, 45, 45, 0.098);
+}
+.PrivacySettingsPage .topnav .back {
+    width: fit-content;
+    height: fit-content;
+    cursor: pointer;
+    display: block;
+}
+.PrivacySettingsPage .topnav .back:hover {
+    transform: translateX(10px);
+    transition-duration: 1s;
+}
+.PrivacySettingsPage .topnav .back svg{
+    width: 30px;
+    height: 30px;
+    transform: rotate(90deg);
+}
+.PrivacySettingsPage .topnav .back svg path{
+    fill: black;
+}
+
+/* topnav end-------------------------------------------------------- */
+
+
+/* settings---------------------------------------------------  */
+.PrivacySettingsPage .PrivacySettingsCont{
+    width: 98%;
+    height: fit-content;
+    max-height: calc(100% - 70px);
+    overflow-y: scroll;
+    margin: auto;
+    padding-bottom: 10px;
+}
+.PrivacySettingsPage .PrivacySettingsCont::-webkit-scrollbar{
+    display: none;
+}
+.PrivacySettingsPage .PrivacySettings{
+    width: 100%;
+    height: fit-content;
+    margin: 10px auto;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 10px;
+}
+.PrivacySettingsPage .PrivacySettings li{
+    width: 100%;
+    height: fit-content;
+
+}
+.PrivacySettingsPage .PrivacySettings li .cardContent{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.PrivacySettingsPage .PrivacySettings li .cardContent b{
+    color: rgb(137, 137, 137);
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+}
+.PrivacySettingsPage .PrivacySettings li span{
+    font-weight: normal;
+    color: rgb(183, 181, 181);
+    font-size: 12px;
+}
+/* ---------------------------------------------------------------------- */
+
+/* Base styles for the toggle button */
+.toggle-selectors {
+    width: 50px;
+    height: 25px;
+    background-color: rgb(137, 137, 137);
+    border-radius: 30px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    transition: background-color 0.3s;
+}
+
+/* Styles for the inner circle */
+.toggle-selectors::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    display: block;
+    transition: transform 0.3s;
+    z-index: 1;
+}
+
+/* Styles for the background */
+.toggle-selectors::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-color: rgb(71, 71, 71);
+    z-index: 0;
+    border-radius: 30px;
+}
+
+/* Define the state when the toggle is on */
+.toggle-selectors[data-selected="true"] {
+    background-color: rgb(0, 150, 136);
+}
+
+.toggle-selectors[data-selected="true"]::before {
+    transform: translateX(25px);
+}
+
+.toggle-selectors[data-selected="true"]::after {
+    background-color: rgb(71, 71, 71);
+}
