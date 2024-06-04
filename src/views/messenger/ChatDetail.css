@@ -1,0 +1,40 @@
+@keyframes moveRight {
+    0% {
+        right: 40px;
+    }
+    100% {
+        right: 10px;
+    }
+}
+
+.animate-move {
+    animation: moveRight 0.5s forwards;
+}
+
+@keyframes moveLeft {
+    0% {
+        right: 10px;
+    }
+    100% {
+        right: 50px;
+    }
+}
+
+.animate-moveLeft {
+    animation: moveLeft 0.3s forwards;
+}
+
+@keyframes moveCameraLeft {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: 10px;
+    }
+}
+
+.animate-moveCameraLeft {
+    animation: moveCameraLeft 0.7s forwards;
+}
+
+/*if you increase time 0.8s it make it slower and vice versa*/

@@ -55,7 +55,7 @@ const Notification = () => {
     const notifications = categorizeNotifications(notificationsData);
 
     return (
-        <div className="h-screen notifications">
+        <div className="h-screen md:h-100vh sm:w-screen md:w-[500px] md:-ml-32 pr-6 pl-6 md:border-">
             <nav className='mb-2 pl-5 pr-5 pt-[40px]'>
                 <Link to='/home'>
                     <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">

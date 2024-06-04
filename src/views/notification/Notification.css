@@ -93,10 +93,10 @@
     .notifications {
         margin-top: -50px;
         margin-right: 0;
-        width: 500px;
+        width: auto;
         border-radius: 0;
         box-shadow: none;
-        max-height: none;
+        max-height: 100vh;
         padding-top: 60px;
     }
 

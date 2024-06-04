@@ -109,8 +109,8 @@ const Messenger = () => {
 
     return (
         <>
-        <div className="flex flex-col h-screen w-full md:w-[500px] md:mr-auto md:ml-[200px] p-4 space-y-2">
-            <div className="flex justify-between items-center">
+        <div className="flex flex-col h-screen sm:w-screen md:w-[500px] md:mr-auto md:ml-[200px] p-4 space-y-2">
+            <div className="flex justify-between items-center pr-4 pl-4">
                 <h2 className="hidden md:block font-bold text-xl mb-2 mt-2">Messages</h2>
                 <button onClick={() => navigate("/home")} className="text-black md:hidden block">
                     <FaArrowLeft size={20}/>
@@ -119,9 +119,10 @@ const Messenger = () => {
                     <FaEdit size={20}/>
                 </button>
             </div>
+            <br></br>
             <div className="flex items-center space-x-2 pr-4 pl-4">
                 <div className="relative flex-1">
-                    <FaSearch className="absolute top-2 left-3 text-black"/>
+                    <FaSearch className="absolute top-2 mt-1 left-3 text-black"/>
                     <input
                         type="text"
                         className="w-full pl-10 pr-4 py-2 bg-gray-300 text-black border border-gray-300 border-radius-3 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500"

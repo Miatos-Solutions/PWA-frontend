@@ -8,7 +8,7 @@ function MessengerPage() {
             <div className="hidden md:block w-1/6 bg-gray-200 pt-6">
                 <TabNavigator/>
             </div>
-            <div className="flex-1 w-1/6">
+            <div className="flex-1 sm:w-screen">
                 <ChatDetail/>
             </div>
         </div>

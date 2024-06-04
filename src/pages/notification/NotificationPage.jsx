@@ -4,11 +4,11 @@ import Notification from "../../views/notification/Notification.jsx";
 
 function NotificationPage() {
     return (
-        <div className="flex h-screen">
+        <div className="flex h-screen md:mr-6">
             <div className="hidden md:block">
                 <LandingPage/>
             </div>
-            <div className="w-1/4 h-screen">
+            <div className="h-screen ml-auto">
                 <Notification/>
             </div>
         </div>
